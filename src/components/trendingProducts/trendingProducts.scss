@@ -1,0 +1,117 @@
+@import "../../theme/vars";
+
+.wrapper_trending_products {
+  background-color: #191725;
+  padding: 5rem 0;
+  margin: 5rem 0;
+  overflow: hidden d;
+  position: relative;
+  &::after {
+    content: "";
+    background: #191725;
+    height: 35px;
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    transform: rotate(-1deg);
+  }
+  &::before {
+    content: "";
+    background: #191725;
+    height: 35px;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    transform: rotate(-1deg);
+  }
+
+  .contain_trending {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+    position: relative;
+    z-index: 1;
+    .trending_a {
+      width: 100%;
+      max-width: 350px;
+      h2,
+      p {
+        color: #fafafa;
+      }
+      .select_trend {
+        max-width: 270px;
+        span[data-slot="value"] {
+          color: red;
+          font-size: 1.25rem;
+          font-family: var(--rvoucher-sans-medium);
+        }
+      }
+    }
+    .trending_b {
+      width: 100%;
+      overflow-x: auto;
+      @include scrollbar_horizontal;
+      .product_brand {
+        margin-bottom: 1.5rem;
+        text-align: center;
+        .link_bussiness {
+          background: #ffffff;
+          display: inline-block;
+          padding: 0.5rem 1.25rem;
+          border-radius: 1rem;
+          img {
+            margin: 0 auto;
+            max-height: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper_trending_products {
+    .contain_trending {
+      gap: 75px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper_trending_products {
+    .contain_trending {
+      gap: 45px;
+    }
+    .trending_b {
+      .list_item_prod_trendig {
+        .wrapper_item_product {
+          min-width: 275px;
+          .img_product {
+            max-width: 90px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper_trending_products {
+    padding: 3rem 0;
+
+    .contain_trending {
+      flex-direction: column;
+      .trending_a {
+        max-width: 100%;
+      }
+      .trending_b {
+        .product_brand {
+          display: none;
+        }
+      }
+    }
+  }
+}

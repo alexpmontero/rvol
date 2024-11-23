@@ -1,0 +1,32 @@
+.wrapper_header {
+  background-color: #fafafa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 22;
+  .header_contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    position: relative;
+    .link_brand {
+      min-width: 150px;
+      img {
+        max-height: 38px;
+      }
+    }
+    .search {
+      width: 100%;
+    }
+    .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+  }
+}

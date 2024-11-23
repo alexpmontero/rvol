@@ -1,0 +1,33 @@
+@import "../../theme/vars";
+
+.wrapper_latest_purchases {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgb(250, 250, 250) 24%,
+    rgb(232, 232, 232) 100%
+  );
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+  .content_latest_purchases {
+    @include scrollbar_horizontal
+  }
+  .wrapper_item_product {
+    box-shadow: none;
+    border: 1px solid #ededed;
+    max-width: 320px;
+    min-width: 320px;
+    .bg_main {
+      background-color: var(--main_color);
+    }
+    .img_product{
+      max-width: 90px;
+    }
+    .box_data_product{
+      justify-content: end;
+      .price_item_product{
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../theme/vars";
+
+.wrapper_top_companies {
+  padding: 3rem 0 1rem;
+  text-align: center;
+  background: #ffffff;
+  margin-top: -30px;
+  border-radius: 2rem 2rem 0 0;
+  .content_companies {
+    @include scrollbar_horizontal;
+    .link_company {
+      min-width: 110px;
+      padding: 1rem .25rem;
+      border-radius: 0.5rem;
+      display: flex;
+      justify-content: center;
+      &:hover {
+        background: #f1f1f1;
+      }
+      img {
+        height: 22px !important;
+        margin: 0 auto;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper_top_companies{
+    padding: 1.5rem 0 1rem;
+  }
+}

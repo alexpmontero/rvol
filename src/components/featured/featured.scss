@@ -1,0 +1,19 @@
+.wrapper_featured{
+  margin: 4rem 0 6rem;
+  .container {
+    .contain_featured{
+      .item_featured{
+        width: 100%;
+        padding: 0 !important;
+        &>div{
+          max-width: 100% !important;
+          width: 100%;
+        }
+        img{
+          width: 100%;
+          height: 100% !important;
+        }
+      }
+    }
+  }
+}

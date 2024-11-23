@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+// COLOR SYSTEMS ---
+:root {
+  --main_color: #FF062A;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@mixin scrollbar_horizontal {
+  /* height */
+  &::-webkit-scrollbar {
+    height: 7px;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f6f6f6;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #dddddd;
+  }
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #aaaaaa;
+  }
+}
+
+@mixin scrollbar_vertical {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #f3f3f3;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    &:hover,
+    &:active {
+      background-color: #aaaaaa;
+    }
+  }
+}

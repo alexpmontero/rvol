@@ -1,0 +1,28 @@
+
+.counter_control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 85px;
+  height: 27px;
+  border: 1.5px solid #cccccc;
+  background-color: #ffffff;
+  border-radius: 9px;
+  padding: 0;
+  span {
+    width: 100%;
+    font-size: 0.85rem;
+    text-align: center;
+    border-radius: 9px;
+  }
+  .btn_count {
+    font-size: 0.6rem;
+    min-height: 27px;
+    height: 100%;
+    min-width: 30px;
+    padding: 0;
+    border-radius: 9px;
+    margin: 0;
+  }
+}

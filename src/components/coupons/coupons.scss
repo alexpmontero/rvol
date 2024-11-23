@@ -1,0 +1,70 @@
+.wrapper_coupons {
+  padding: 2rem 0;
+  .link_slide {
+    img {
+      border-radius: 1rem;
+    }
+  }
+  .contain_coupons {
+    position: relative;
+  }
+  .item_content_coupon {
+    padding: 0 0.5rem;
+    img {
+      border-radius: 1rem;
+    }
+  }
+  .btn__slide {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    border-radius: 50%;
+    z-index: 1;
+    font-size: 1.5rem;
+    border: 1px solid #aaaaaa;
+    cursor: pointer;
+    // opacity: 0.15;
+    &:hover {
+      opacity: 1;
+    }
+    &.next {
+      right: 0;
+      left: auto;
+    }
+  }
+}
+
+.modal_coupon {
+  .img_in_coupon_modal {
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .wrapper_coupons .btn__slide {
+    top: 150px;
+    font-size: 1.25rem;
+    opacity: .5;
+    &:hover{
+      opacity: 1;
+    }
+    &.prev{
+      left: 5px;
+    }
+    &.next{
+      right: 5px;
+    }
+  }
+  .wrapper_coupons .item_content_coupon img {
+    border-radius: .65rem;
+  }
+}

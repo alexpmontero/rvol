@@ -1,0 +1,40 @@
+.wrapper_slide_home {
+  padding: 1rem 0;
+  .link_slide {
+    img {
+      border-radius: 1rem;
+    }
+  }
+  .contain_slide_home {
+    position: relative;
+    &:hover {
+      .btn__slide{
+        opacity: 1;
+      }
+      
+    }
+  }
+  .btn__slide {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 40%;
+    left: 7px;
+    border-radius: 50%;
+    z-index: 1;
+    font-size: 1.75rem;
+    cursor: pointer;
+    opacity: 0.15;
+    &:hover {
+      opacity: 1;
+    }
+    &.next {
+      right: 7px;
+      left: auto;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.wrapper_modal_login {
+  padding: 0.5rem 1rem;
+  .modal_header_login {
+    img {
+      max-width: 140px;
+    }
+  }
+  .modal_body_login {
+    .wlcme {
+      max-width: 300px;
+      h2 {
+        line-height: 1.2;
+      }
+    }
+  }
+}

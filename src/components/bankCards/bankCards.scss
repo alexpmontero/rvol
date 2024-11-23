@@ -1,0 +1,11 @@
+.wrapper_bank_cards {
+  .info_bank_cards {
+    margin-top: 1.75rem;
+    button {
+      &:hover {
+        background: none;
+        opacity: .75;
+      }
+    }
+  }
+}

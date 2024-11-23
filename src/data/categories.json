@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nameCategory": "Artes Escénicas"
+  },
+  {
+    "id": 2,
+    "nameCategory": "Ferias / Congresos"
+  },
+  {
+    "id": 3,
+    "nameCategory": "Música"
+  },
+  {
+    "id": 4,
+    "nameCategory": "Cursos"
+  },
+  {
+    "id": 5,
+    "nameCategory": "Deportes"
+  },
+  {
+    "id": 6,
+    "nameCategory": "Museos / Exposiciones"
+  },
+  {
+    "id": 7,
+    "nameCategory": "Orgullo Pride"
+  }
+]
