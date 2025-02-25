@@ -95,7 +95,7 @@ export const FormCheckout = () => {
           </div>
         </Checkbox>
         <div className="mt-5 mb-5">
-          <Button className="w-full is_button is_primary" type="submit">
+          <Button as={Link} href="/complete-purchase" className="w-full is_button is_primary" type="submit">
             Pagar <span>$400.00 MXN</span>
             <Image
               src={btnRP.src}

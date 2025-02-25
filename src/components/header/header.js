@@ -21,10 +21,6 @@ export const Header = () => {
               priority
             />
           </Link>
-          {/* <div className="search">
-            <code>Buscador</code>
-          </div> */}
-
           <NavbarComponent />
         </div>
       </div>

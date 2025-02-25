@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "@/theme/react-slick.scss";
 import "./titleHome.scss";
 
-
 export const TitleHome = () => {
   var settings = {
     dots: false,
@@ -27,6 +26,9 @@ export const TitleHome = () => {
           </h1>
           <h1 className="title_home max-sm:text-5xl">
             ¿A <span className="highlighted">dónde</span> vamos?
+          </h1>
+          <h1 className="title_home max-sm:text-5xl">
+            ¡<span className="highlighted">Sorprende</span> a alguien!
           </h1>
         </Slider>
       </div>
